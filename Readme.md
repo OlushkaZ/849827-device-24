@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Ольга Жидкова](https://up.htmlacademy.ru/htmlcss/24/user/849827).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Налимова](https://htmlacademy.ru/profile/tuetfe).
 
 ---
 
