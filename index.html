@@ -8,10 +8,24 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/index-logo.svg" width="163" height="35" alt="Логотип магазина «Device»">
       </a>
+      <div class="user-panel">
+        <a class="search-link" href="#">
+          <span>Поиск по сайту</span>
+        </a>
+        <a class="login-link" href="#">
+          <span>Войти</span>
+        </a>
+        <a class="compare-link" href="#">
+          <span>Сравнить</span>
+        </a>
+        <a class="basket-link" href="#">
+          <span>Корзина</span>
+        </a>
+      </div>
+      <nav class="main-navigation">
       <ul class="site-navigation">
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li><a href="delivery.html">Доставка</a></li>
@@ -19,24 +33,12 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
     </nav>
-    <a class="search-link" href="#">
-      <span>Поиск по сайту</span>
-    </a>
-    <a class="login-link" href="#">
-      <span>Войти</span>
-    </a>
-    <a class="compare-link" href="#">
-      <span>Сравнить</span>
-    </a>
-    <a class="basket-link" href="#">
-      <span>Корзина</span>
-    </a>
   </header>
   <main class="container">
 
     <h1 class="visually-hidden">Магазин «Device»</h1>
 
-    <section class="about-us">
+    <section class="info-block about-us">
       <h2>О нас</h2>
       <p>
         Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -55,53 +57,59 @@
           ЖелДорЭкспедици
         </li>
       </ul>
-      <a class="about-us-link" href="#">Подробнее о нас</a>
+      <a class="link" href="#">Подробнее о нас</a>
     </section>
 
-    <section class="contacts">
+    <section class="info-block contacts">
       <h2>Контакты</h2>
       <p>
         Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
       </p>
       <img src="img/map.jpg" width="560" height="222" alt="Карта проезда">
-      <a class="contacts-link" href="#">Напишите нам</a>
+      <a class="link" href="#">Напишите нам</a>
+    </section>
   </main>
 
 <footer class="main-footer">
-
-  <section class="footer-navigation">
+  <div class="wrap-address">
     <a class="main-footer-logo">
       <img src="img/index-logo.svg" width="163" height="35" alt="Логотип магазина «Device»">
     </a>
+    <p class="footer-contacts">
+      г. Москва, ул. Строителей, 15
+    </p>
+    <p>
+      Тел.: +7 (495) 495-95-95
+    </p>
+  </div>
+  <div class="wrap-footer-navigation">
     <ul class="site-navigation">
       <li><a href="delivery.html">Доставка</a></li>
       <li><a href="warranty.html">Гарантия</a></li>
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
-  </section>
-  <a class="login-link" href="#">
-    <span>Войти</span>
-  </a>
-  <a class="compare-link" href="#">
-    <span>Сравнить</span>
-  </a>
-  <a class="basket-link" href="#">
-    <span>Корзина</span>
-  </a>
-  <p class="footer-contacts">
-    г. Москва, ул. Строителей, 15
-  </p>
-  <p>
-    Тел.: +7 (495) 495-95-95
-  </p>
-  <ul class="footer-social">
-    <li><a class="social-button" href="#">Вконтакте</a></li>
-    <li><a class="social-button" href="#">Фейсбук</a></li>
-    <li><a class="social-button" href="#">Инстаграм</a></li>
-  </ul>
-  <a href="https://htmlacademy.ru">
-    <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML-Academy">
-  </a>
+    <ul class="footer-social">
+      <li><a class="social-button" href="#">Вконтакте</a></li>
+      <li><a class="social-button" href="#">Фейсбук</a></li>
+      <li><a class="social-button" href="#">Инстаграм</a></li>
+    </ul>
+  </div>
+  <div class="wrap-user-panel">
+    <div class="user-panel">
+      <a class="login-link" href="#">
+        <span>Войти</span>
+      </a>
+      <a class="compare-link" href="#">
+        <span>Сравнить</span>
+      </a>
+      <a class="basket-link" href="#">
+        <span>Корзина</span>
+      </a>
+    </div>
+    <a href="https://htmlacademy.ru">
+      <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML-Academy">
+    </a>
+  </div>
 </footer>
 </body>
 </html>
