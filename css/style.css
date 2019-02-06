@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'open_sanslight';
+  src: url('../fonts/opensanslight.woff2') format('woff2'),
+    url('../fonts/opensanslight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/opensans.woff2') format('woff2'),
+    url('../fonts/opensans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroy_extrabold';
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+    url('../fonts/gilroyextrabold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroy_light';
+  src: url('../fonts/gilroylight.woff2') format('woff2'),
+    url('../fonts/gilroylight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "open_sanslight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #464646;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-family: "gilroy_extrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+   letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f0c52e;
+}
+
+.site-navigation-catalog{
+    font-family: "open_sanslight", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    font-weight: 400;
+    letter-spacing: 0.15px;
+    color: #000000;
+    text-transform: none;
+    background-color: #f0c52e;
+}
+.site-navigation,
+.site-navigation-catalog {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-panel a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-panel a:hover,
+.user-panel a:focus,
+.main-header-logo:hover,
+.main-header-logo:focus{
+  opacity: 0.6;
+}
+
+.site-navigation a:active,
+.user-panel a:active,
+.main-header-logo:active{
+  opacity: 0.3;
+}
+
+.footer-social{
+    list-style: none;
+}
