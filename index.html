@@ -10,7 +10,7 @@
 
 <body>
   <header class="main-header container">
-      <a class="main-header-logo">
+    <a class="main-header-logo">
       <img class="logo-device" src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
     </a>
     <div class="user-panel">
@@ -34,45 +34,74 @@
         </a>
       </div>
     </div>
-    <nav class="main-navigation">
-
-      <a href="#"  class="catalog-link" >Каталог товаров</a>
-
+    <nav class="main-navigation link-text">
+      <a href="#" class="catalog-link">Каталог товаров</a>
       <ul class="site-navigation container-right">
         <li><a href="delivery.html">Доставка</a></li>
         <li><a href="warranty.html">Гарантия</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
-
       <ul class="site-navigation-catalog">
-        <li><a href="vr.html">Виртуальная реальность</a></li>
-        <li><a href="catalog.html">Моноподы для селфи</a></li>
-        <li><a href="camera.html">Экшн-камеры</a></li>
-        <li><a href="fitnes.html">Фитнес-браслеты</a></li>
-        <li><a href="smart-clock.html">Умные часы</a></li>
-        <li><a href="kvadrokopter.html">Квадрокоптеры</a></li>
+        <li aria-label="устройства для сьемки и воспроизведения видео">
+          <ul class="all-devices video-devices">
+            <li><a href="vr.html">Виртуальная реальность</a></li>
+            <li><a href="catalog.html">Моноподы для селфи</a></li>
+            <li><a href="camera.html">Экшн-камеры</a></li>
+          </ul>
+        </li>
+        <li aria-label="наручные устройства">
+          <ul class="all-devices hend-devices">
+            <li><a href="fitnes.html">Фитнес-браслеты</a></li>
+            <li><a href="smart-clock.html">Умные часы</a></li>
+          </ul>
+        </li>
+        <li aria-label="другие устройства">
+          <ul class="all-devices other-devices">
+            <li><a href="kvadrokopter.html">Квадрокоптеры</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
-  <main class="container">
-
+  <main>
     <h1 class="visually-hidden">Магазин «Device»</h1>
     <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
-      <button class="services-button services-button-delivery" type="button">Доставка</button>
-      <button class="services-button services-button-warranty" type="button">Гарантия</button>
-      <button class="services-button services-button-credit" type="button">Кредит</button>
-      <figure class="services-content">
-        <div class="services-images">
-          <!--здесь будет фон с svg  -->
+      <div class="services-buttons services-gradient">
+        <button class="services-button services-button-delivery link-text" type="button">Доставка</button>
+        <button class="services-button services-button-warranty link-text" type="button">Гарантия</button>
+        <button class="services-button services-button-credit link-text" type="button">Кредит</button>
+      </div>
+      <figure class="services-content services-gradient">
+        <div class="services-images services-gradient">
         </div>
-        <figcaption>
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+        <figcaption class="services-text">
+          <h3 class="section-caption deivery-caption">Доставка</h3>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+          </p>
         </figcaption>
       </figure>
     </section>
+    <section class="brends container">
+      <ul class="brends-list">
+        <li>
+          <a class="brend-item" href="#"><img src="img/logo1.jpg" width="260" height="100" alt="Логотип компании ДиДжиАй"></a>
+        </li>
+        <li>
+            <a class="brend-item" href="#"><img src="img/logo3.jpg" width="260" height="100" alt="Логотип компании го про"></a>
+        </li>
+        <li>
+          <a class="brend-item" href="#"><img src="img/logo2.jpg" width="260" height="100" alt="Логотип компании с п гаджетс"></a>
+        </li>
+        <li>
+          <a class="brend-item" href="#"><img src="img/logo4.jpg" width="260" height="100" alt="Логотип компании Вайв"></a>
+        </li>
+      </ul>
+    </section>
+    <div class="wrapper-info-block container">
     <section class="info-block about-us">
-      <h2>О нас</h2>
+      <h2 class="section-caption info-block-caption">О нас</h2>
       <p>
         Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
       </p>
@@ -80,71 +109,79 @@
         Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
       </p>
       <ul class="delivery-company-list">
-        <li class="delivery-company-item">
-          Деловые Линии
+        <li>
+          <span class="delivery-company-item">Деловые Линии</span>
         </li>
-        <li class="delivery-company-item">
-          Автотрейдинг
+        <li>
+          <span class="delivery-company-item">Автотрейдинг</span>
         </li>
-        <li class="delivery-company-item">
-          ЖелДорЭкспедици
+        <li>
+          <span class="delivery-company-item">ЖелДорЭкспедиция</span>
         </li>
       </ul>
-      <a class="link" href="#">Подробнее о нас</a>
+      <a class="link-text link-decoration" href="#">Подробнее о нас</a>
     </section>
 
     <section class="info-block contacts">
-      <h2>Контакты</h2>
-      <p>
+      <h2 class="section-caption info-block-caption">Контакты</h2>
+      <p class="map-text">
         Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
       </p>
+      <p class="map">
       <a href="#">
         <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу: г.Москва, ул. Строителей, 15">
       </a>
-      <a class="link" href="#">Напишите нам</a>
+  </p>
+      <a class="link-text link-decoration" href="#">Напишите нам</a>
     </section>
+</div>
   </main>
 
   <footer class="main-footer">
-    <div class="wrap-address">
-      <a class="main-footer-logo">
-        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
-      </a>
-      <p class="footer-contacts">
-        г. Москва, ул. Строителей, 15
-      </p>
-      <a href="tel:+74954959595">
-        Тел.: +7 (495) 495-95-95
-      </a>
-    </div>
-    <div class="wrap-footer-navigation">
-      <ul class="site-navigation">
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="footer-social">
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-      </ul>
-    </div>
-    <div class="wrap-user-panel">
-      <div class="user-panel">
-        <a class="login-link" href="#">
-          Войти
+    <div class="wrapper-footer container">
+      <div class="footer-address">
+        <a class="main-footer-logo">
+          <img src="img/logo-device-footer.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
         </a>
-        <a class="compare-link" href="#">
-          Сравнить
-        </a>
-        <a class="basket-link" href="#">
-          Корзина
-        </a>
+        <p class="footer-contacts">
+          г. Москва, ул. Строителей, 15
+        </p>
       </div>
-      <a href="https://htmlacademy.ru">
-        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML-Academy">
-      </a>
-    </div>
+      <div class="wrapper-footer-navigation">
+        <div class="footer-user-panel">
+          <a class="login-link" href="#">
+            Войти
+          </a>
+          <a class="compare-link" href="#">
+            Сравнить
+          </a>
+          <a class="basket-link" href="#">
+            Корзина
+          </a>
+        </div>
+        <div class="footer-navigation">
+          <div class="wrapper-site-navigation">
+            <ul class="footer-site-navigation">
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="warranty.html">Гарантия</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="footer-social">
+              <li><a class="social-button" href="#">Вконтакте</a></li>
+              <li><a class="social-button" href="#">Фейсбук</a></li>
+              <li><a class="social-button" href="#">Инстаграм</a></li>
+            </ul>
+          </div>
+          <div class="footer-phone">
+            <a href="tel:+74954959595" class="footer-phone-link">
+              Тел.: +7 (495) 495-95-95
+            </a>
+            <a href="https://htmlacademy.ru" class="footer-logo-html">
+              <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML-Academy">
+            </a>
+          </div>
+        </div>
+      </div>
   </footer>
   <section class="modal modal-feedback">
     <div class="modal-feedback-wrap">
@@ -165,7 +202,7 @@
           <label class="feedback-form-label" for="feedback-name">Текст письма:</label>
           <textarea class="feedback-form-textarea" id="feedback-text" rows="5" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="link feedback-button" type="submit">
+        <button class="link-text feedback-button" type="submit">
           Отправить
         </button>
       </form>

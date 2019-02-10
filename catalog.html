@@ -8,10 +8,10 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <header class="main-header">
-    <a class="main-header-logo" href="index.html">
-      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
+<body class="catalog-body">
+  <header class="main-header container">
+    <a  href="index.html" class="main-header-logo">
+      <img class="logo-device" src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
     </a>
     <div class="user-panel">
       <form class="search-form" action="index.html" method="post">
@@ -22,50 +22,66 @@
           Найти
         </button>
       </form>
-      <a class="user-name" href="#">
-        Валентин Петухов
-      </a>
-      <a class="login-link" href="#">
-        Выйти
-      </a>
-      <a class="compare-link" href="#">
-        Сравнить
-      </a>
-      <a class="basket-link" href="#">
-        Корзина
-      </a>
+      <div class="container-right">
+          <a class="user-name" href="#">
+            Валентин Петухов
+          </a>
+          <a class="login-link" href="#">
+            Выйти
+          </a>
+        <a class="compare-link" href="#">
+          Сравнить
+        </a>
+        <a class="basket-link" href="#">
+          Корзина
+        </a>
+      </div>
     </div>
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог товаров</a>
-          <ul class="site-navigation-catalog">
-            <li><a href="vr.html">Виртуальная реальность</a></li>
-            <li><a href="catalog.html">Моноподы для селфи</a></li>
-            <li><a href="camera.html">Экшн-камеры</a></li>
-            <li><a href="fitnes.html">Фитнес-браслеты</a></li>
-            <li><a href="smart-clock.html">Умные часы</a></li>
-            <li><a href="kvadrokopter.html">Квадрокоптеры</a></li>
-          </ul>
-        </li>
+    <nav class="main-navigation link-text">
+      <a href="#" class="catalog-link">Каталог товаров</a>
+      <ul class="site-navigation container-right">
         <li><a href="delivery.html">Доставка</a></li>
         <li><a href="warranty.html">Гарантия</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
+      <ul class="site-navigation-catalog">
+        <li aria-label="устройства для сьемки и воспроизведения видео">
+          <ul class="all-devices video-devices">
+            <li><a href="vr.html">Виртуальная реальность</a></li>
+            <li><a href="catalog.html">Моноподы для селфи</a></li>
+            <li><a href="camera.html">Экшн-камеры</a></li>
+          </ul>
+        </li>
+        <li aria-label="наручные устройства">
+          <ul class="all-devices hend-devices">
+            <li><a href="fitnes.html">Фитнес-браслеты</a></li>
+            <li><a href="smart-clock.html">Умные часы</a></li>
+          </ul>
+        </li>
+        <li aria-label="другие устройства">
+          <ul class="all-devices other-devices">
+            <li><a href="kvadrokopter.html">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
   </header>
-  <main class="container">
-    <h1 class="page-title">Моноподы для селфи</h1>
+  <main>
+    <h1 class="section-caption catalog-caption">Моноподы для селфи</h1>
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог товаров</a></li>
-      <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
+      <li><a href="catalogAll.html">Каталог товаров</a></li>
+      <li class="breadcrumbs-current">Моноподы для селфи</li>
     </ul>
+    <div class="filter-panel">
+        <h2>Фильтр:</h2>
+    </div>
+    <div class=wrapper-filters>
     <section class="filters">
-      <h2>Фильтр:</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
-          <legend>Цвет</legend>
-          <ul>
+          <legend class="catalog-item-title">Цвет</legend>
+          <ul class="filter-option-list">
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
               <label for="filter-black">Черный</label>
@@ -89,8 +105,8 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Bluetooth</legend>
-          <ul>
+          <legend class="catalog-item-title">Bluetooth</legend>
+          <ul class="filter-option-list">
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="filter-yes" checked>
               <label for="filter-yes">Есть</label>
@@ -101,7 +117,7 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit" class="filter-button link">Показать</button>
+        <button type="submit" class="filter-button link-text">Показать</button>
       </form>
     </section>
     <section class="catalog">
@@ -145,50 +161,56 @@
         </li>
       </ul>
     </section>
+</div>
   </main>
   <footer class="main-footer">
-    <div class="wrap-address">
-      <a class="main-footer-logo" href="index.html">
-        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
-      </a>
-      <p class="footer-contacts">
-        г. Москва, ул. Строителей, 15
-      </p>
-      <a href="tel:+74954959595">
-        Тел.: +7 (495) 495-95-95
-      </a>
-    </div>
-    <div class="wrap-footer-navigation">
-      <ul class="site-navigation">
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="footer-social">
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-      </ul>
-    </div>
-    <div class="wrap-user-panel">
-      <div class="user-panel">
-        <a class="user-name" href="#">
-          Валентин Петухов
+    <div class="wrapper-footer container">
+      <div class="footer-address">
+        <a href="index.html" class="main-footer-logo">
+          <img src="img/logo-device-footer.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
         </a>
-        <a class="login-link" href="#">
-          Выйти
-        </a>
-        <a class="compare-link" href="#">
-          Сравнить
-        </a>
-        <a class="basket-link" href="#">
-          Корзина
-        </a>
+        <p class="footer-contacts">
+          г. Москва, ул. Строителей, 15
+        </p>
       </div>
-      <a href="https://htmlacademy.ru">
-        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML-Academy">
-      </a>
-    </div>
+      <div class="wrapper-footer-navigation">
+        <div class="footer-user-panel">
+          <a class="user-name" href="#">
+            Валентин Петухов
+          </a>
+          <a class="login-link" href="#">
+            Выйти
+          </a>
+          <a class="compare-link" href="#">
+            Сравнить
+          </a>
+          <a class="basket-link" href="#">
+            Корзина
+          </a>
+        </div>
+        <div class="footer-navigation">
+          <div class="wrapper-site-navigation">
+            <ul class="footer-site-navigation">
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="warranty.html">Гарантия</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="footer-social">
+              <li><a class="social-button" href="#">Вконтакте</a></li>
+              <li><a class="social-button" href="#">Фейсбук</a></li>
+              <li><a class="social-button" href="#">Инстаграм</a></li>
+            </ul>
+          </div>
+          <div class="footer-phone">
+            <a href="tel:+74954959595" class="footer-phone-link">
+              Тел.: +7 (495) 495-95-95
+            </a>
+            <a href="https://htmlacademy.ru" class="footer-logo-html">
+              <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML-Academy">
+            </a>
+          </div>
+        </div>
+      </div>
   </footer>
 </body>
 
