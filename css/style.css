@@ -1,32 +1,32 @@
 @font-face {
-  font-family: 'open_sanslight';
+  font-family: 'open_sans';
   src: url('../fonts/opensanslight.woff2') format('woff2'),
     url('../fonts/opensanslight.woff') format('woff');
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'open_sansregular';
+  font-family: 'open_sans';
   src: url('../fonts/opensans.woff2') format('woff2'),
     url('../fonts/opensans.woff') format('woff');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'gilroy_extrabold';
+  font-family: 'gilroy';
   src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
     url('../fonts/gilroyextrabold.woff') format('woff');
-  font-weight: normal;
+  font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'gilroy_light';
+  font-family: 'gilroy';
   src: url('../fonts/gilroylight.woff2') format('woff2'),
     url('../fonts/gilroylight.woff') format('woff');
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -62,10 +62,10 @@ body {
   margin: 0;
   padding: 0;
   width: 1440px;
-  font-family: "open_sanslight", Arial, sans-serif;
+  font-family: "open_sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.15px;
   color: #464646;
   background-color: #ffffff;
@@ -100,6 +100,19 @@ a {
   width: 561px;
   margin-left: auto;
 }
+.search-form-label{
+  color: rgba(0, 0, 0, 0.3);
+}
+.search-form-label:hover{
+  color: rgba(0, 0, 0, 0.6);
+}
+.search-form-input:focus+.search-button{
+  visibility: visible;
+}
+
+.search-button{
+visibility:hidden;
+}
 
 .main-header {
   margin-top: 40px;
@@ -127,10 +140,10 @@ a {
 }
 
 .link-text {
-  font-family: "gilroy_extrabold", Arial, sans-serif;
+  font-family: "gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 3.6px;
   color: #000000;
   text-transform: uppercase;
@@ -146,10 +159,10 @@ a {
 
 .site-navigation-catalog {
   display: none;
-  font-family: "open_sanslight", Arial, sans-serif;
+  font-family: "open_sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.15px;
   color: #000000;
   text-transform: none;
@@ -226,10 +239,10 @@ a {
 .section-caption {
   margin: 0;
   padding: 0;
-  font-family: "gilroy_extrabold", Arial, sans-serif;
+  font-family: "gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.47px;
   color: #000000;
 }
@@ -314,10 +327,10 @@ margin-bottom: 30px;
     padding: 0;
     list-style-type: circle;
 
-    font-family: "gilroy_extrabold", Arial, sans-serif;
-font-size: 15px;
+    font-family: "gilroy", Arial, sans-serif;
+font-size: 16px;
 line-height: 40px;
-font-weight: 700;
+font-weight: 800;
 letter-spacing: 0.6px;
 color: #000000;
 }
@@ -349,10 +362,10 @@ margin-left: 202px;
 .breadcrumbs{
 display: flex;
 
-font-family: "open_sanslight", Arial, sans-serif;
+font-family: "open_sans", Arial, sans-serif;
 font-size: 14px;
 line-height: 24px;
-font-weight: 400;
+font-weight: 300;
 letter-spacing: 0.14px;
 color: rgba(0,0,0,0.3);
 }
@@ -383,10 +396,10 @@ color: rgba(0,0,0,0.3);
     flex-wrap: wrap;
 }
 .catalog-item-title{
-font-family: "gilroy_extrabold", Arial, sans-serif;
+font-family: "gilroy", Arial, sans-serif;
 font-size: 18px;
 line-height: 24px;
-font-weight: 400;
+font-weight: 800;
 letter-spacing: 0.2px;
 color: #000000;
 }
@@ -397,10 +410,10 @@ color: #000000;
     flex-wrap: wrap;
 }
 .filter-option{
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "open_sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 40px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.14px;
     color: #000000;
 }
@@ -408,10 +421,10 @@ color: #000000;
 .main-footer {
   margin-top: 85px;
   min-height: 322px;
-  font-family: "open_sanslight", Arial, sans-serif;
+  font-family: "open_sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: 300;
   color: #ffffff;
   background-color: #464646;
 }
@@ -450,10 +463,10 @@ color: #000000;
   width: 641px;
   justify-content: center;
   margin-bottom: 49px;
-  font-family: "gilroy_extrabold", Arial, sans-serif;
+  font-family: "gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 3.6px;
   color: #ffffff;
   text-transform: uppercase;
