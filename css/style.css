@@ -61,7 +61,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  width: 1440px;
   font-family: "open_sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -209,14 +208,17 @@ visibility:hidden;
 .services {
   min-height: 388px;
   margin-bottom: 93px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: #e5e5e5;
+background-color: #e5e5e5;
+}
+.wrapper-services{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #e5e5e5;
 }
 
 .services-buttons {
-  width: 423px;
+  width: 284px;
   min-height: 320px;
   display: flex;
   flex-direction: column;
@@ -246,27 +248,45 @@ visibility:hidden;
   letter-spacing: 0.47px;
   color: #000000;
 }
-.deivery-caption{
+.delivery-caption{
     margin-bottom: 30px;
+
 }
 
 .services-content {
   margin: 0;
   padding: 0;
-  width: 1015px;
+  width: 876px;
   padding-left: 116px;
-  padding-right: 206px;
+  padding-right: 65px;
   padding-top: 74px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
 
-.services-images {
+/* .services-image {
   margin-top: 11px;
   width: 136px;
   height: 164px;
+} */
+.services-image-delivery {
+    margin-top: 11px;
+    width: 136px;
+    height: 164px;
   background-image: url("../img/delivery.svg");
+}
+.services-image-warranty {
+    margin-top: 11px;
+    width: 171px;
+    height: 195px;
+  background-image: url("../img/warranty.svg");
+}
+.services-image-credit {
+    margin-top: 11px;
+    width: 156px;
+    height: 188px;
+  background-image: url("../img/credit.svg");
 }
 
 .services-text {
