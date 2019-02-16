@@ -34,7 +34,6 @@ var addThumbnailClickHandler = function (thumbnail, image, textServices, textIte
     textItem.removeChild(textItem.firstChild);
     textNode = document.createTextNode(textItemServices);
     textItem.appendChild(textNode);
-
   });
 };
 
