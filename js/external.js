@@ -19,14 +19,18 @@ var figure = document.querySelector('.services-image');
 var text, textNode;
 text = document.querySelector('.delivery-caption');
  var textItem = document.querySelector('.services-text-item');
+var thumbnailsWrappers = document.querySelectorAll('.wrapper-services-button');
 
-
-var addThumbnailClickHandler = function (thumbnail, image, textServices, textItemServices, num) {
+var addThumbnailClickHandler = function (thumbnail, thumbnailWrapper, image, textServices, textItemServices) {
   thumbnail.addEventListener('click', function () {
       for (var j = 0; j < thumbnails.length; j++) {
-        figure.classList.remove(image[j]);
+        figure.classList.remove(imgServices[j]);
+        thumbnails[j].classList.remove('services-button-current');
+        thumbnailsWrappers[j].classList.remove('services-button-current');
       }
-       figure.classList.add(image[num]);
+       figure.classList.add(image);
+       thumbnail.classList.add('services-button-current');
+       thumbnailWrapper.classList.add('services-button-current');
 
    text.removeChild(text.firstChild);
    textNode = document.createTextNode(textServices);
@@ -38,5 +42,5 @@ var addThumbnailClickHandler = function (thumbnail, image, textServices, textIte
 };
 
 for (var i = 0; i < thumbnails.length; i++) {
-  addThumbnailClickHandler(thumbnails[i], imgServices, texts[i], textItems[i], i);
+  addThumbnailClickHandler(thumbnails[i], thumbnailsWrappers[i], imgServices[i], texts[i], textItems[i]);
 }

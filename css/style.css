@@ -337,12 +337,11 @@ white-space: pre-line;
   background-color: transparent;
 }
 
-.services-button:hover,
 .services-button:focus {
-  outline: none;
+  background-color: transparent;
 }
 
-.services-button:active {
+.services-button:active{
   color: #f7e184;
   background-color: #000000;
   background-image: none;
@@ -350,6 +349,11 @@ white-space: pre-line;
 
 .wrapper-services-button:active {
   background-color: #000000;
+}
+.services-button-current{
+    color: #f7e184;
+    background-color: #000000;
+    background-image: none;
 }
 
 .services-gradient {
@@ -528,7 +532,8 @@ white-space: pre-line;
   color: rgba(0, 0, 0, 0.1);
 }
 .wrapper-catalog{
-    background-color: #ebebeb;
+    background-image: linear-gradient(to right, #ebebeb 35%, #ffffff 35%);
+    /* background-color: #ebebeb; */
 }
 .wrapper-filters {
   display: flex;
