@@ -13,27 +13,31 @@
     <a href="index.html" class="main-header-logo">
       <img class="logo-device" src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
     </a>
-
     <div class="user-panel">
       <form class="search-form" action="index.html" method="post">
-        <label class="search-form-label" for="search-text">Поиск по сайту</label>
+        <label class="search-form-label" for="search-text">
+          <span class="visually-hidden">Поиск по сайту</span>
+
+        </label>
         <input class="search-form-input" id="search-text" type="search" value="" placeholder="Поиск по сайту">
 
         <button class="search-button" type="submit">
           Найти
         </button>
       </form>
-      <div class="container-right">
-        <a class="user-name" href="#">
-          Валентин Петухов
-        </a>
-        <a class="login-link" href="#">
-          Выйти
-        </a>
-        <a class="compare-link" href="#">
+      <div class="user-panel-links container-right">
+        <div class="wrapper-login">
+            <a class="user-panel-link user-link" href="#">
+              Валентин Петухов
+            </a>
+          <a class="user-panel-link logout-link" href="#">
+            Выйти
+          </a>
+        </div>
+        <a class="user-panel-link compare-link" href="#">
           Сравнить
         </a>
-        <a class="basket-link" href="#">
+        <a class="user-panel-link basket-link" href="#">
           Корзина
         </a>
       </div>
@@ -41,9 +45,9 @@
     <nav class="main-navigation link-text">
       <a href="#" class="catalog-link">Каталог товаров</a>
       <ul class="site-navigation container-right">
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li class="site-navigation-link"><a href="delivery.html">Доставка</a></li>
+        <li class="site-navigation-link"><a href="warranty.html">Гарантия</a></li>
+        <li class="site-navigation-link"><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class="site-navigation-catalog">
         <li aria-label="устройства для сьемки и воспроизведения видео">
@@ -179,31 +183,34 @@
         </p>
       </div>
       <div class="wrapper-footer-navigation">
-        <div class="footer-user-panel">
-          <a class="user-name" href="#">
-            Валентин Петухов
+        <div class=" footer-user-panel">
+            <a class="footer-panel-link footer-user-link" href="#">
+              <div class="footer-user-link-img"></div>
+              <span class="footer-user-link-text">Валентин Петухов</span>
+            </a>
+          <a class="footer-panel-link footer-logout-link" href="#">
+            <span class="footer-logout-link-text">Выйти</span>
           </a>
-          <a class="login-link" href="#">
-            Выйти
+          <a class="footer-panel-link footer-compare-link" href="#">
+            <div class="footer-compare-link-img"></div>
+            <span class="footer-compare-link-text">Сравнить</span>
           </a>
-          <a class="compare-link" href="#">
-            Сравнить
-          </a>
-          <a class="basket-link" href="#">
-            Корзина
+          <a class="footer-panel-link footer-basket-link" href="#">
+            <div class="footer-basket-link-img"> </div>
+            <span class="footer-basket-link-text">Корзина</span>
           </a>
         </div>
         <div class="footer-navigation">
           <div class="wrapper-site-navigation">
             <ul class="footer-site-navigation">
-              <li><a href="delivery.html">Доставка</a></li>
-              <li><a href="warranty.html">Гарантия</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
+              <li><a class="footer-site-navigation-link" href="delivery.html">Доставка</a></li>
+              <li><a class="footer-site-navigation-link" href="warranty.html">Гарантия</a></li>
+              <li><a class="footer-site-navigation-link" href="contacts.html">Контакты</a></li>
             </ul>
             <ul class="footer-social">
-              <li><a class="social-button" href="#">Вконтакте</a></li>
-              <li><a class="social-button" href="#">Фейсбук</a></li>
-              <li><a class="social-button" href="#">Инстаграм</a></li>
+              <li><a class="social-button facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+              <li><a class="social-button instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+              <li><a class="social-button twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
             </ul>
           </div>
           <div class="footer-phone">
