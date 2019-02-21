@@ -20,6 +20,11 @@ var photosHeight = [
     '485',
     '334'
 ];
+var photosAlt = [
+    'длинные селфи-палки',
+    'фитнес-браслет',
+    'квадрокоптер'
+];
 var textsSlides = [
 'Делай селфи, \n как Бен Стиллер!',
 'Худеем, \n правильно!',
@@ -95,7 +100,7 @@ var slidesTabVal5 = document.querySelector('.slides-table-caption .table-third-p
 var slidesTabVal6 = document.querySelector('.slides-table-data .table-third-property');
 
 
-var addThumbnailClickHandlerSlides = function (thumbnail, photo, photoClass, width, height, caption, text, linkDestination, tabVal1, tabVal2, tabVal3, tabVal4, tabVal5, tabVal6) {
+var addThumbnailClickHandlerSlides = function (thumbnail, photo, photoClass, width, height, describeImg, caption, text, linkDestination, tabVal1, tabVal2, tabVal3, tabVal4, tabVal5, tabVal6) {
   thumbnail.addEventListener('click', function () {
     // console.log(thumbnail);
     // console.log(photo);
@@ -106,6 +111,7 @@ var addThumbnailClickHandlerSlides = function (thumbnail, photo, photoClass, wid
     fullPhotoSlides.classList.add(photoClass);
     fullPhotoSlides.width = width;
     fullPhotoSlides.height = height;
+    fullPhotoSlides.alt = describeImg;
     slidesCaption.removeChild(slidesCaption.firstChild);
     textNode = document.createTextNode(caption);
     slidesCaption.appendChild(textNode);
@@ -129,7 +135,7 @@ var addThumbnailClickHandlerSlides = function (thumbnail, photo, photoClass, wid
 };
 
 for (var i = 0; i < thumbnailsSlides.length; i++) {
-  addThumbnailClickHandlerSlides(thumbnailsSlides[i], photos[i], photosClass[i], photosWidth[i], photosHeight[i], textsSlides[i], textItemsSlides[i], linkSlides[i], tabSlidesVal1[i], tabSlidesVal2[i], tabSlidesVal3[i], tabSlidesVal4[i], tabSlidesVal5[i], tabSlidesVal6[i]);
+  addThumbnailClickHandlerSlides(thumbnailsSlides[i], photos[i], photosClass[i], photosWidth[i], photosHeight[i], photosAlt[i], textsSlides[i], textItemsSlides[i], linkSlides[i], tabSlidesVal1[i], tabSlidesVal2[i], tabSlidesVal3[i], tabSlidesVal4[i], tabSlidesVal5[i], tabSlidesVal6[i]);
 }
 
 

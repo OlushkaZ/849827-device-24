@@ -15,21 +15,26 @@
     </a>
     <div class="user-panel">
       <form class="search-form" action="index.html" method="post">
-        <label class="search-form-label" for="search-text">Поиск по сайту</label>
+        <label class="search-form-label" for="search-text">
+          <span class="visually-hidden">Поиск по сайту</span>
+
+        </label>
         <input class="search-form-input" id="search-text" type="search" value="" placeholder="Поиск по сайту">
 
         <button class="search-button" type="submit">
           Найти
         </button>
       </form>
-      <div class="container-right">
-        <a class="login-link" href="#">
-          Войти
-        </a>
-        <a class="compare-link" href="#">
+      <div class="user-panel-links container-right">
+        <div class="user-panel-link wrapper-login">
+          <a class="user-panel-link login-link" href="#">
+            Войти
+          </a>
+        </div>
+        <a class="user-panel-link compare-link" href="#">
           Сравнить
         </a>
-        <a class="basket-link" href="#">
+        <a class="user-panel-link basket-link" href="#">
           Корзина
         </a>
       </div>
@@ -37,9 +42,9 @@
     <nav class="main-navigation link-text">
       <a href="#" class="catalog-link">Каталог товаров</a>
       <ul class="site-navigation container-right">
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li class="site-navigation-link"><a href="delivery.html">Доставка</a></li>
+        <li class="site-navigation-link"><a href="warranty.html">Гарантия</a></li>
+        <li class="site-navigation-link"><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class="site-navigation-catalog">
         <li aria-label="устройства для сьемки и воспроизведения видео">
@@ -70,8 +75,7 @@
       <div class="slides-describe container-right">
         <b class="slides-caption section-caption">Делай селфи,
           как Бен Стиллер! </b>
-        <p class="slides-text">
-          Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+        <p class="slides-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
         </p>
         <div class="slides-panel">
           <a class="button slides-link link-text" href="mostLongItem.html">подробнее</a>
@@ -91,18 +95,18 @@
           </div>
         </div>
         <table class="slides-table">
-            <tbody class="slides-table-body">
-          <tr class="slides-table-caption">
-            <th class="table-first-property">Длина палки</th>
-            <th class="table-second-property">Вес палки</th>
-            <th class="table-third-property">Материал</th>
-          </tr>
-          <tr class="slides-table-data">
-            <td class="table-first-property">8,5 м</td>
-            <td class="table-second-property">5 кг</td>
-            <td class="table-third-property">Карбон</td>
-          </tr>
-      </tbody>
+          <tbody class="slides-table-body">
+            <tr class="slides-table-caption">
+              <th class="table-first-property">Длина палки</th>
+              <th class="table-second-property">Вес палки</th>
+              <th class="table-third-property">Материал</th>
+            </tr>
+            <tr class="slides-table-data">
+              <td class="table-first-property">8,5 м</td>
+              <td class="table-second-property">5 кг</td>
+              <td class="table-third-property">Карбон</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
@@ -212,7 +216,7 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
         </p>
         <p class="map">
-          <a href="#">
+          <a href="map-servic.html">
             <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу: г.Москва, ул. Строителей, 15">
           </a>
         </p>
@@ -232,28 +236,30 @@
         </p>
       </div>
       <div class="wrapper-footer-navigation">
-        <div class="footer-user-panel">
-          <a class="login-link" href="#">
-            Войти
+        <div class=" footer-user-panel">
+          <div class="footer-panel-link footer-wrapper-login">
+            <a class="footer-panel-link footer-login-link" href="#">
+              <span class="footer-panel-link-text">Войти</span>
+            </a>
+          </div>
+          <a class="footer-panel-link footer-compare-link" href="#">
+            <span class="footer-panel-link-text">Сравнить</span>
           </a>
-          <a class="compare-link" href="#">
-            Сравнить
-          </a>
-          <a class="basket-link" href="#">
-            Корзина
+          <a class="footer-panel-link footer-basket-link" href="#">
+            <span class="footer-panel-link-text">Корзина</span>
           </a>
         </div>
         <div class="footer-navigation">
           <div class="wrapper-site-navigation">
             <ul class="footer-site-navigation">
-              <li><a href="delivery.html">Доставка</a></li>
-              <li><a href="warranty.html">Гарантия</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
+              <li><a class="footer-site-navigation-link" href="delivery.html">Доставка</a></li>
+              <li><a class="footer-site-navigation-link" href="warranty.html">Гарантия</a></li>
+              <li><a class="footer-site-navigation-link" href="contacts.html">Контакты</a></li>
             </ul>
             <ul class="footer-social">
-              <li><a class="social-button" href="#">Вконтакте</a></li>
-              <li><a class="social-button" href="#">Фейсбук</a></li>
-              <li><a class="social-button" href="#">Инстаграм</a></li>
+              <li><a class="social-button facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+              <li><a class="social-button instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+              <li><a class="social-button twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
             </ul>
           </div>
           <div class="footer-phone">
