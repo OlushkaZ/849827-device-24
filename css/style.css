@@ -102,7 +102,12 @@ a {
   width: 561px;
   margin-left: auto;
 }
-
+.feedback-button{
+  background: none;
+border: none;
+/* margin: 0;
+padding: 0; */
+}
 .button {
   display: inline-block;
   min-width: 200px;
@@ -1116,4 +1121,58 @@ opacity: 0.3;
 
 .footer-phone-link {
   margin: 10px 0;
+}
+.modal{
+  position: fixed;
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+  z-index: 10;
+}
+.modal-feedback{
+  width: 960px;
+  top:70px;
+  left: 50%;
+  margin-left: -480px;
+  padding: 90px 100px 80px;
+  background-color: #ffffff;
+}
+.modal-close{
+  position: absolute;
+}
+.feedback-form{
+  display: flex;
+  flex-wrap: wrap;
+}
+.feedback-form-wrap{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin: 0px;
+  margin-bottom: 36px;
+  padding: 0px;
+}
+.feedback-form-wrap:first-child {
+    padding-right: 40px;
+  }
+.feedback-form-label{
+  margin-bottom: 5px;
+}
+.feedback-form-input,
+.feedback-form-textarea{
+  width: 360px;
+  height: 50px;
+  padding-left: 22px;
+  border: none;
+  background-color: #e5e5e5;
+  opacity: 0.5;
+}
+.feedback-form-textarea{
+  width: 760px;
+  height: 156px;
+      padding-top: 15px;
+}
+.feedback-button{
+  /* background: none;
+border: none; */
+margin: 0;
+padding: 0;
 }
