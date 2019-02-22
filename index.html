@@ -276,7 +276,7 @@
       </div>
   </footer>
   <section class="modal modal-feedback">
-    <div class="modal-feedback-wrap">
+    <!-- <div class="modal-feedback-wrap"> -->
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <button class="modal-close" type="button">
         Закрыть
@@ -284,11 +284,11 @@
       <form class="feedback-form" action="index.html" method="post">
         <p class="feedback-form-wrap">
           <label class="feedback-form-label catalog-item-title" for="feedback-name">Ваше имя:</label>
-          <input class="feedback-form-input" id="feedback-name" type="text" value="" placeholder="Имя Фамилия">
+          <input class="feedback-form-input" id="feedback-name" type="text" required value="" placeholder="Имя Фамилия">
         </p>
         <p class="feedback-form-wrap">
           <label class="feedback-form-label catalog-item-title" for="feedback-email">Ваш e-mail:</label>
-          <input class="feedback-form-input" id="feedback-email" type="text" value="" placeholder="email@example.com">
+          <input class="feedback-form-input" id="feedback-email" type="email" required value="" placeholder="email@example.com">
         </p>
         <p class="feedback-form-wrap">
           <label class="feedback-form-label catalog-item-title" for="feedback-name">Текст письма:</label>
@@ -298,7 +298,7 @@
           Отправить
         </button>
       </form>
-    </div>
+    <!-- </div> -->
   </section>
   <section class="modal modal-map">
     <!-- здесь будет карта -->
