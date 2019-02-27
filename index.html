@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -111,6 +111,7 @@
       </div>
     </div>
     <section class="devices container">
+        <h2 class="visually-hidden">ассортимент товаров</h2>
       <ul class="devices-list">
         <li class="devices-item">
           <div class="devices-item-img  item-vr">
@@ -172,6 +173,7 @@
       </div>
     </section>
     <section class="brends container">
+        <h2 class=visually-hidden>производители</h2>
       <ul class="brends-list">
         <li>
           <a class="brend-item" href="#"><img src="img/logo1.jpg" width="260" height="100" alt="Логотип компании ДиДжиАй"></a>
@@ -274,33 +276,34 @@
           </div>
         </div>
       </div>
+    </div>
   </footer>
   <section class="modal modal-feedback">
     <!-- <div class="modal-feedback-wrap"> -->
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <button class="modal-close" type="button">
-        Закрыть
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <button class="modal-close" type="button">
+      Закрыть
+    </button>
+    <form class="feedback-form" action="index.html" method="post">
+      <p class="feedback-form-wrap">
+        <label class="feedback-form-label catalog-item-title" for="feedback-name">Ваше имя:</label>
+        <input class="feedback-form-input" id="feedback-name" type="text" required value="" placeholder="Имя Фамилия">
+      </p>
+      <p class="feedback-form-wrap">
+        <label class="feedback-form-label catalog-item-title" for="feedback-email">Ваш e-mail:</label>
+        <input class="feedback-form-input" id="feedback-email" type="email" required value="" placeholder="email@example.com">
+      </p>
+      <p class="feedback-form-wrap">
+        <label class="feedback-form-label catalog-item-title" for="feedback-name">Текст письма:</label>
+        <textarea class="feedback-form-textarea" id="feedback-text" rows="5" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button link-text feedback-button" type="submit">
+        Отправить
       </button>
-      <form class="feedback-form" action="index.html" method="post">
-        <p class="feedback-form-wrap">
-          <label class="feedback-form-label catalog-item-title" for="feedback-name">Ваше имя:</label>
-          <input class="feedback-form-input" id="feedback-name" type="text" required value="" placeholder="Имя Фамилия">
-        </p>
-        <p class="feedback-form-wrap">
-          <label class="feedback-form-label catalog-item-title" for="feedback-email">Ваш e-mail:</label>
-          <input class="feedback-form-input" id="feedback-email" type="email" required value="" placeholder="email@example.com">
-        </p>
-        <p class="feedback-form-wrap">
-          <label class="feedback-form-label catalog-item-title" for="feedback-name">Текст письма:</label>
-          <textarea class="feedback-form-textarea" id="feedback-text" rows="5" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="button link-text feedback-button" type="submit">
-          Отправить
-        </button>
-      </form>
-    <!-- </div> -->
+    </form>
   </section>
   <section class="modal modal-map">
+      <h2 class="visually-hidden">расположение магазина</h2>
     <!-- здесь будет карта -->
   </section>
   <script src="js/external.js"></script>
