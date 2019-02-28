@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet">
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -70,7 +71,7 @@
   </header>
   <main>
     <h1 class="visually-hidden">Магазин «Device»</h1>
-    <div class="slides container">
+    <div class="slides container slide-1 slide-show">
       <img class="slides-img slides-img-first" src="img/slider-1.png" width="384" height="486" alt="длинные селфи-палки">
       <div class="slides-describe container-right">
         <b class="slides-caption section-caption">Делай селфи,
@@ -80,15 +81,15 @@
         <div class="slides-panel">
           <a class="button slides-link link-text" href="mostLongItem.html">подробнее</a>
           <div class="slides-thumbnails">
-            <div class="slides-thumbnail-big">
+            <div class="slides-thumbnail-big-1">
               <div class="slides-thumbnail-small">
               </div>
             </div>
-            <div class="slides-thumbnail-big">
+            <div class="slides-thumbnail-big-2">
               <div class="slides-thumbnail-small">
               </div>
             </div>
-            <div class="slides-thumbnail-big">
+            <div class="slides-thumbnail-big-3">
               <div class="slides-thumbnail-small">
               </div>
             </div>
@@ -110,8 +111,80 @@
         </table>
       </div>
     </div>
+    <div class="slides container slide-2">
+      <img class="slides-img slides-img-second" src="img/slider-2.png" width="345" height="485" alt="фитнес-браслет">
+      <div class="slides-describe container-right">
+        <b class="slides-caption section-caption">Худеем,
+          правильно!</b>
+        <p class="slides-text">Мотивирующие фитнес-браслеты помогут найти в себе силы
+          не пропускать занятия и соблюдать диету. </p>
+        <div class="slides-panel">
+          <a class="button slides-link link-text" href="#">подробнее</a>
+          <div class="slides-thumbnails">
+            <div class="slides-thumbnail-big-1">
+              <div class="slides-thumbnail-small">
+              </div>
+            </div>
+            <div class="slides-thumbnail-big-2">
+              <div class="slides-thumbnail-small">
+              </div>
+            </div>
+            <div class="slides-thumbnail-big-3">
+              <div class="slides-thumbnail-small">
+              </div>
+            </div>
+          </div>
+        </div>
+        <table class="slides-table">
+          <tbody class="slides-table-body">
+            <tr class="slides-table-caption">
+              <th class="table-first-property">Без подзарядки</th>
+            </tr>
+            <tr class="slides-table-data">
+              <td class="table-first-property">48 часов</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="slides container slide-3">
+      <img class="slides-img slides-img-third" src="img/slider-3.png" width="526" height="334" alt="квадрокоптер">
+      <div class="slides-describe container-right">
+        <b class="slides-caption section-caption">Порхает как бабочка, жалит как пчела!</b>
+        <p class="slides-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+        <div class="slides-panel">
+          <a class="button slides-link link-text" href="#">подробнее</a>
+          <div class="slides-thumbnails">
+            <div class="slides-thumbnail-big-1">
+              <div class="slides-thumbnail-small">
+              </div>
+            </div>
+            <div class="slides-thumbnail-big-2">
+              <div class="slides-thumbnail-small">
+              </div>
+            </div>
+            <div class="slides-thumbnail-big-3">
+              <div class="slides-thumbnail-small">
+              </div>
+            </div>
+          </div>
+        </div>
+        <table class="slides-table">
+          <tbody class="slides-table-body">
+            <tr class="slides-table-caption">
+              <th class="table-first-property">Дальность полета</th>
+              <th class="table-second-property">Радиус поражения</th>
+            </tr>
+            <tr class="slides-table-data">
+              <td class="table-first-property">800 м</td>
+              <td class="table-second-property">50 м</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
     <section class="devices container">
-        <h2 class="visually-hidden">ассортимент товаров</h2>
+      <h2 class="visually-hidden">ассортимент товаров</h2>
       <ul class="devices-list">
         <li class="devices-item">
           <div class="devices-item-img  item-vr">
@@ -148,7 +221,7 @@
     </section>
     <section class="services services-gradient">
       <h2 class="visually-hidden">Услуги</h2>
-      <div class="wrapper-services container services-gradient">
+      <div class="wrapper-services wrapper-service-1 container services-gradient slide-show">
         <div class="services-buttons services-gradient">
           <div class="wrapper-services-button services-button-current">
             <button class="button services-button services-button-current services-button-delivery link-text" type="button">Доставка</button>
@@ -171,9 +244,55 @@
           </figcaption>
         </figure>
       </div>
+      <div class="wrapper-services wrapper-service-2 container services-gradient">
+        <div class="services-buttons services-gradient">
+          <div class="wrapper-services-button">
+            <button class="button services-button services-button-delivery link-text" type="button">Доставка</button>
+          </div>
+          <div class="wrapper-services-button services-button-current">
+            <button class="button services-button services-button-current services-button-warranty link-text" type="button">Гарантия</button>
+          </div>
+          <div class="wrapper-services-button">
+            <button class="button services-button services-button-credit link-text" type="button">Кредит</button>
+          </div>
+        </div>
+        <figure class="services-content services-gradient">
+          <div class="services-image services-image-warranty">
+          </div>
+          <figcaption class="services-text">
+            <h3 class="section-caption delivery-caption">Гарантия</h3>
+            <p class="services-text-item">
+              Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="wrapper-services wrapper-service-3 container services-gradient">
+        <div class="services-buttons services-gradient">
+          <div class="wrapper-services-button">
+            <button class="button services-button services-button-delivery link-text" type="button">Доставка</button>
+          </div>
+          <div class="wrapper-services-button">
+            <button class="button services-button services-button-warranty link-text" type="button">Гарантия</button>
+          </div>
+          <div class="wrapper-services-button services-button-current">
+            <button class="button services-button services-button-current services-button-credit link-text" type="button">Кредит</button>
+          </div>
+        </div>
+        <figure class="services-content services-credit">
+          <div class="services-image services-image-credit">
+          </div>
+          <figcaption class="services-text">
+            <h3 class="section-caption delivery-caption">Кредит</h3>
+            <p class="services-text-item">
+              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
     </section>
     <section class="brends container">
-        <h2 class=visually-hidden>производители</h2>
+      <h2 class=visually-hidden>производители</h2>
       <ul class="brends-list">
         <li>
           <a class="brend-item" href="#"><img src="img/logo1.jpg" width="260" height="100" alt="Логотип компании ДиДжиАй"></a>
@@ -303,10 +422,10 @@
     </form>
   </section>
   <section class="modal modal-map">
-      <h2 class="visually-hidden">расположение магазина</h2>
+    <h2 class="visually-hidden">расположение магазина</h2>
     <!-- здесь будет карта -->
   </section>
-  <script src="js/external.js"></script>
+  <script src="js/external.min.js"></script>
 </body>
 
 </html>

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet">
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -102,14 +103,18 @@
               <legend><span class="visually-hidden">Стоимость</span></legend>
               <span class="catalog-item-title">Стоимость</span>
               <div class="filter-block-price">
-                <svg class="filter-price-line" width="203" height="25">
-                  <line x1="0" y1="12" x2="203" y2="12" stroke="#dbdbdb" stroke-width="1.5" />
-                  <line x1="0" y1="12" x2="120" y2="12" stroke="#91c92f" stroke-width="1.5" />
-                </svg>
-                <div class="filter-price filter-price-min"></div>
-                <div class="filter-price filter-price-max"></div>
-                <span class="filter-price-text-from">от 0</span>
-                <span class="filter-price-text-to">до 5000</span>
+                <div class="wrapper-filter-price">
+                  <svg class="filter-price-line" width="203" height="31">
+                    <line x1="0" y1="31" x2="203" y2="31" stroke="#dbdbdb" stroke-width="2" />
+                    <line x1="0" y1="31" x2="120" y2="31" stroke="#91c92f" stroke-width="2" />
+                  </svg>
+                  <div class="filter-price filter-price-min"></div>
+                  <div class="filter-price filter-price-max"></div>
+                </div>
+                <div class="wrapper-filter-price-text">
+                  <span class="filter-price-text-from">от 0</span>
+                  <span class="filter-price-text-to">до 5000</span>
+                </div>
               </div>
             </fieldset>
             <fieldset class="filter-fieldset">
