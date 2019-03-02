@@ -2,74 +2,45 @@ var buttonFeedback = document.querySelector(".contact-button");
 var popupFeedback = document.querySelector(".modal-feedback");
 var close = popupFeedback.querySelector(".modal-close");
 
-var slide1 = document.querySelector('.slide-1');
-var slide2 = document.querySelector('.slide-2');
-var slide3 = document.querySelector('.slide-3');
-var thumbnailsSlides1 = document.querySelectorAll('.slides-thumbnail-big-1');
-var thumbnailsSlides2 = document.querySelectorAll('.slides-thumbnail-big-2');
-var thumbnailsSlides3 = document.querySelectorAll('.slides-thumbnail-big-3');
+var thumbnailsSlides = document.querySelectorAll('.slides-thumbnail-big');
 var slides = document.querySelectorAll('.slides');
 
-var slideService1 = document.querySelector('.wrapper-service-1');
-var slideService2 = document.querySelector('.wrapper-service-2');
-var slideService3 = document.querySelector('.wrapper-service-3');
-var thumbnailServicesDelivery = document.querySelectorAll('.services-button-delivery');
-var thumbnailServicesWarranty = document.querySelectorAll('.services-button-warranty');
-var thumbnailServicesCredit = document.querySelectorAll('.services-button-credit');
-var slideServices = document.querySelectorAll('.wrapper-services');
+var thumbnailServices = document.querySelectorAll('.services-button');
+var thumbnailServicesWrapper = document.querySelectorAll('.wrapper-services-button');
+var slideServices = document.querySelectorAll('.services-content');
 
 //первый слайдер
+var addThumbnailClickHandler = function (number) {
+    thumbnailsSlides[number].addEventListener("click", function() {
+      for (var j = 0; j < slides.length; j++) {
+        slides[j].classList.remove("slide-show");
+        thumbnailsSlides[j].classList.remove("slides-thumbnail-big-current");
+      }
+      slides[number].classList.add("slide-show");
+      thumbnailsSlides[number].classList.add("slides-thumbnail-big-current");
+    });
+};
 
-for (var i = 0; i < thumbnailsSlides1.length; i++) {
-  thumbnailsSlides1[i].addEventListener("click", function(evt) {
-    for (var j = 0; j < slides.length; j++) {
-      slides[j].classList.remove("slide-show");
-    }
-    slide1.classList.add("slide-show");
-  });
-}
-for (var i = 0; i < thumbnailsSlides2.length; i++) {
-  thumbnailsSlides2[i].addEventListener("click", function(evt) {
-    for (var j = 0; j < slides.length; j++) {
-      slides[j].classList.remove("slide-show");
-    }
-    slide2.classList.add("slide-show");
-  });
-}
-for (var i = 0; i < thumbnailsSlides3.length; i++) {
-  thumbnailsSlides3[i].addEventListener("click", function(evt) {
-    for (var j = 0; j < slides.length; j++) {
-      slides[j].classList.remove("slide-show");
-    }
-    slide3.classList.add("slide-show");
-  });
+for (var i = 0; i < thumbnailsSlides.length; i++) {
+  addThumbnailClickHandler(i);
 }
 
 //второй слайдер
+var addThumbnailServiceClickHandler = function (number) {
+    thumbnailServices[number].addEventListener("click", function() {
+      for (var j = 0; j < thumbnailServices.length; j++) {
+        slideServices[j].classList.remove("slide-show");
+        thumbnailServices[j].classList.remove("services-button-current");
+        thumbnailServicesWrapper[j].classList.remove("services-button-current");
+      }
+      slideServices[number].classList.add("slide-show");
+      thumbnailServices[number].classList.add("services-button-current");
+      thumbnailServicesWrapper[number].classList.add("services-button-current");
+    });
+};
 
-for (var i = 0; i < thumbnailServicesDelivery.length; i++) {
-  thumbnailServicesDelivery[i].addEventListener("click", function(evt) {
-    for (var j = 0; j < slideServices.length; j++) {
-      slideServices[j].classList.remove("slide-show");
-    }
-    slideService1.classList.add("slide-show");
-  });
-}
-for (var i = 0; i < thumbnailServicesWarranty.length; i++) {
-  thumbnailServicesWarranty[i].addEventListener("click", function(evt) {
-    for (var j = 0; j < slideServices.length; j++) {
-      slideServices[j].classList.remove("slide-show");
-    }
-    slideService2.classList.add("slide-show");
-  });
-}
-for (var i = 0; i < thumbnailServicesCredit.length; i++) {
-  thumbnailServicesCredit[i].addEventListener("click", function(evt) {
-    for (var j = 0; j < slideServices.length; j++) {
-      slideServices[j].classList.remove("slide-show");
-    }
-    slideService3.classList.add("slide-show");
-  });
+for (var i = 0; i < thumbnailServices.length; i++) {
+  addThumbnailServiceClickHandler(i);
 }
 
 //попап обратной связи
