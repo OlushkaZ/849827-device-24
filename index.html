@@ -5,8 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <!-- <link href="css/style.min.css" rel="stylesheet"> -->
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -288,7 +287,7 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
         </p>
         <p class="map">
-          <a href="map-servic.html">
+          <a class="link-map" href="map-servic.html">
             <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу: г.Москва, ул. Строителей, 15">
           </a>
         </p>
@@ -357,11 +356,11 @@
     <form class="feedback-form" action="index.html" method="post">
       <p class="feedback-form-wrap">
         <label class="feedback-form-label catalog-item-title" for="feedback-name">Ваше имя:</label>
-        <input class="feedback-form-input" id="feedback-name" type="text" required value="" placeholder="Имя Фамилия">
+        <input class="feedback-form-input" id="feedback-name" type="text" value="" placeholder="Имя Фамилия">
       </p>
       <p class="feedback-form-wrap">
         <label class="feedback-form-label catalog-item-title" for="feedback-email">Ваш e-mail:</label>
-        <input class="feedback-form-input" id="feedback-email" type="email" required value="" placeholder="email@example.com">
+        <input class="feedback-form-input" id="feedback-email" type="email" value="" placeholder="email@example.com">
       </p>
       <p class="feedback-form-wrap">
         <label class="feedback-form-label catalog-item-title" for="feedback-name">Текст письма:</label>
@@ -374,9 +373,13 @@
   </section>
   <section class="modal modal-map">
     <h2 class="visually-hidden">расположение магазина</h2>
-    <!-- здесь будет карта -->
+    <button class="modal-close-map" type="button">
+      Закрыть
+    </button>
+    <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/-/CCU9BV44" width="960" height="559"></iframe>
+    <!-- <div class="map-iframe" id="map"></div> -->
   </section>
-  <script src="js/external.js"></script>
+  <script src="js/external.min.js"></script>
 </body>
 
 </html>
