@@ -906,10 +906,14 @@ a {
 
 .brend-item {
   opacity: 0.2;
+  -webkit-filter: grayscale(1);
+      filter: gray; /* для IE6-9 */
+      filter: grayscale(1);
 }
 
 .brend-item:hover {
   opacity: 1;
+  filter: none;
 }
 
 .wrapper-info-block {
