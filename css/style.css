@@ -463,12 +463,14 @@ a {
 .main-slider {
   position: relative;
 }
-.wrapper-slides{
+
+.wrapper-slides {
   border-bottom: 1px solid transparent;
 }
+
 .slides {
   display: none;
-  margin-bottom: 106px;
+  margin-bottom: 104px;
   padding-left: 90px;
   background-image: -webkit-linear-gradient(top, rgba(240, 197, 46, 0.5) 111px, #ffffff 111px);
   background-image: -o-linear-gradient(top, rgba(240, 197, 46, 0.5) 111px, #ffffff 111px);
@@ -476,11 +478,11 @@ a {
 }
 
 .slide-2 {
-  margin-bottom: 95px;
+  margin-bottom: 93px;
 }
 
 .slide-3 {
-  margin-bottom: 110px;
+  margin-bottom: 109px;
 }
 
 .slides-img-first {}
@@ -907,8 +909,8 @@ a {
 .brend-item {
   opacity: 0.2;
   -webkit-filter: grayscale(1);
-      filter: gray; /* для IE6-9 */
-      filter: grayscale(1);
+  filter: gray;
+  filter: grayscale(1);
 }
 
 .brend-item:hover {
@@ -1338,7 +1340,8 @@ a {
 .filter-input-checkbox:focus+.filter-text {
   outline: auto;
 }
-.filter-input:disabled+.filter-text{
+
+.filter-input:disabled+.filter-text {
   opacity: 0.25;
   pointer-events: none;
 }
